@@ -1,0 +1,22 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+dependencies {
+    // gradle sdk
+    compile gradleApi()
+    // groovy sdk
+    compile localGroovy()
+    compile "javazoom:jlayer:1.0.1"
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.groupId = "com.fcat.android.plugin"
+            pom.artifactId = "hypnus"
+            pom.version = "0.0.1"
+            //本地路径
+            repository(url: uri("/Users/fcat/Documents/maven/repo"))
+        }
+    }
+}
