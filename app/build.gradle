@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
-apply plugin: 'hypnus'
+//apply plugin: 'hypnus'
 
 android {
     compileSdkVersion 29
